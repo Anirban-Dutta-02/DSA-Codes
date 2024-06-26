@@ -1,0 +1,52 @@
+DSA Basics
+Data Structures : A structured format in which data items can be stored , organised / arranged , accessed and manipulated / modified for easy usage in future.
+
+Data Structures are of two types:- 1. Linear Data Structures(LDS) 2.Non-Linear Data Structures(NLDS)
+
+Linear Data Structures:-
+* Adjacently attached
+* Single level
+* Easy
+* Single Run
+* Memory is not utilized efficiently
+* Arrays, LinkedList, Stack, Queues
+
+Non-Linear Data Structure:-
+* Hierarchy attached
+* Multiple level
+* Difficult
+* Multiple runs
+* Effective usage of memory
+* Tree, Graphs
+
+Arrays : Linear data structure which holds homogenous data in contigeous memory locations and can be easily accessed using index values.
+Pros/Cons-
+* Random Accessing
+* Easy Retrival
+* Easy to use & Understand
+* Fixed Nature
+* Insert & Delete issues
+
+Declaration and Initialization-
+1D ARRAYS
+Datatype ArrayName[size]={........}
+int Arr[5]={[1][2][3][4][5]};
+index:       0  1  2  3  4  
+
+size(arr) = U-L+1 = 4-0+1 = 5 // U=upper limit L=lower limit
+addr(arr[i]) = BA + s(i-L);  //BA=base address s=size i=index
+array traversal:
+        for(i=0;i<n;i++)   //n=size of array
+        {
+            print(arr[i]);
+        }
+array insertion:                       //pos=index+1,  index=pos-1
+    best case- insert at end
+    worst case- insert at beginning
+
+2D ARRAYS
+int arr[i][j]={[[],[]],
+               [[],[]]};
+Representation - 1. Row Major Order 2. Column Major Order
+addr(arr[i][j])=BA+s[(i-Lr)(Uc-Lc+1)+(j-Lc)]      //Row Major Order
+addr(arr[i][j])=BA+s[(j-Lc)(Ur-Lr+1)+(i-Lr)]      //Column Major Order
